@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0; 
-    font-family: 'Nunito', sans-serif;
 }
 
 body {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
     font-size: 10px;
     background-color: #DAE0E2;
     width: 100%;
-    margin: 0 auto;
 }
 
 .header {
@@ -34,4 +33,19 @@ body {
 
 .welcome p{
     font-size: 2rem;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #000;
+    text-align: center;
+    height: 50px;
+    background-color: #535C68;
+    font-size: 1.5rem;
+}
+
+.footer > p {
+    padding: 9px;
 }
