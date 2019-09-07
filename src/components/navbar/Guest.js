@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navbar() {
+function Guest() {
     return (
         <div className="container">
             <div className="navbar">
@@ -12,4 +12,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default Guest;
