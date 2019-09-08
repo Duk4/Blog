@@ -13,6 +13,12 @@ body {
     width: 100%;
 }
 
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
 .header {
     height: 70vh;
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("./img/header1.jpg");
@@ -85,7 +91,6 @@ body {
 
 .form > h3 {
     margin: 5rem auto;
-    font-size: 4rem;
     width: 50%;
 }
 
@@ -107,6 +112,7 @@ body {
     flex-basis: 0;
     flex-grow: 10;
     padding-left: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .input-field button {
@@ -115,16 +121,19 @@ body {
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 1rem auto;
     width: 50%;
     border: none;
     border-radius: 1rem;
-    background-color: #0A79DF;
-    color: #eee;
     cursor: pointer;
 }
 
-.input-field button:hover {
+.login-btn {
+    background-color: #0A79DF;
+    color: #eee;
+    margin: 1rem auto;
+}
+
+.input-field .login-btn:hover {
     background-color: #192A56;
 }
 
@@ -141,7 +150,6 @@ body {
 
 .about h3 {
     font-size: 3rem;
-    margin-bottom: 2rem;
 }
 
 .about p {
@@ -156,4 +164,47 @@ body {
 .disclaimer {
     font-size: 1rem;
     margin-top: 2rem;
+}
+
+.new-post {
+    background-color: #DAE0E2;
+    height: 100vh;
+}
+
+.input-field > div {
+    flex: none;
+    width: 10rem;
+    text-align: left;
+}
+
+.new-post textarea {
+    width: 100%;
+    height: 55vh;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5rem
+}
+
+.new-post button {
+    margin: 1rem;
+}
+
+.new-post .cancel-btn {
+    background-color: #758AA2;
+    color: #292e34;
+}
+
+.new-post .cancel-btn:hover {
+    background-color: #535C68;
+    color: #eee;
+}
+
+.new-post .submit-btn {
+    background-color: #2ecc72;
+    color: #292e34;
+}
+
+.new-post .submit-btn:hover {
+    background-color: #26ae60;
+    color: #eee;
 }
