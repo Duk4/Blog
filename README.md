@@ -8,6 +8,12 @@
     git clone https://github.com/Duk4/Blog.git
 ```
 
+### Then enter the folder by typing this in the console:
+
+```bash 
+    cd name-of-the-folder
+```
+
 ### To install all modules:
 
 ```bash 
