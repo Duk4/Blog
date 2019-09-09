@@ -70,6 +70,10 @@ h3 {
     transform: scale(1.2);
 }
 
+.admin {
+    width: 20%;
+}
+
 .footer {
     width: 100%;
     bottom: 0;
