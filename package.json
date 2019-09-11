@@ -6,9 +6,17 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "firebase": "^6.6.0",
+    "moment": "^2.24.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "2.1.8"
+    "react-redux": "^7.1.1",
+    "react-redux-firebase": "^2.4.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.4",
+    "redux-firestore": "^0.9.0",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
