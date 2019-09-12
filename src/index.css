@@ -241,6 +241,44 @@ h3 {
     text-align: right;
 }
 
+.blog {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: #535C68;
+    box-shadow: 2rem 0 2rem 0 rgba(83,92,104,0.75), -2rem 0 2rem 0 rgba(83,92,104,0.75);
+}
+
+.post-summary {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+    color: #000;
+    background-color: #DAE0E2;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+.summary {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.summary-info {
+    font-size: 1rem;
+    display: flex;
+}
+
+.summary-info p {
+    margin-top: 1rem;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
 .post-date {
     font-size: 0.8rem;
+    text-align: right;
 }
