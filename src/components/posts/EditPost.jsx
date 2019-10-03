@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class EditPost extends Component {
+class EditPost extends React.Component {
     state = {
         title: '',
         text: ''
@@ -8,19 +8,18 @@ class EditPost extends Component {
 
     render() {
         return (
-            <div className="new-post">
-                <form className="new-post-form">
+            <div className="edit-post">
+                <form className="edit-post-form">
                     <h3>Izmeni tekst</h3>
-                    <div className="input-field">
+                    <div className="edit-input-field">
                         <label htmlFor="title-text">Naslov:</label>
                         <input type="text" id="title-text" />
                     </div>
-                    <div className="input-field">
+                    <div className="edit-input-field">
                         <label htmlFor="textarea">Tekst:</label>
                         <textarea />
                     </div>
-                    <div className="input-field">
-                        <div></div>
+                    <div className="edit-input-field btns">
                         <button className="cancel-btn">Odbaci</button>
                         <button className="submit-btn">Sačuvaj</button>
                     </div>

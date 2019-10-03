@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PostSummary() {
+const PostSummary = () => {
     return (
         <div className="post-summary">
             <h4>Title</h4>

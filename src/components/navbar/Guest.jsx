@@ -1,11 +1,11 @@
 import React from "react";
 
-function Guest() {
+const Guest = () => {
     return (
         <div className="container">
             <div className="navbar">
-                <a href={"https://github.com/Duk4"}>Blog</a>
-                <a href={"https://github.com/Duk4"}>O meni</a>
+                <a href={"#"}>Blog</a>
+                <a href={"#"}>O meni</a>
                 <a href={"https://github.com/Duk4"}>GitHub</a>
             </div>
         </div>

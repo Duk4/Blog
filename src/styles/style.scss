@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('./footer.scss');
+@import url('./header.scss');
+@import url('./blog.scss');
+@import url('./about.scss');
+@import url('./login.scss');
+@import url('./navbar.scss');
+@import url('./new_post.scss');
+@import url('./edit_post.scss');
+@import url('./post_summary.scss');
+@import url('./post.scss');
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    font-size: 10px;
+    background-color: #DAE0E2;
+    width: 100%;
+}
+
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+.container {
+    width: 100%;
+    background-color: #DAE0E2;
+}
+
+.cancel-btn {
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: #758AA2;
+    color: #292e34;
+    margin: 1rem;
+    &:hover {
+        background-color: #535C68;
+        color: #eee;
+    }
+}
+
+.submit-btn {
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: #2ecc72;
+    color: #292e34;
+    margin: 1rem;
+    &:hover {
+        background-color: #26ae60;
+        color: #eee;
+    }
+}

@@ -1,0 +1,21 @@
+.header {
+    height: 70vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../img/header1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #eee;
+    text-align: center;
+}
+
+.welcome {
+    padding: 25vh 0;
+}
+
+.welcome h1 {
+    font-size: 5rem;
+}
+
+.welcome p {
+    font-size: 2rem;
+}

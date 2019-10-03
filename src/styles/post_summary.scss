@@ -1,0 +1,30 @@
+.post-summary {
+    width: 80%;
+    margin: 0 auto 1rem auto;
+    padding: 1rem;
+    color: #000;
+    background-color: #DAE0E2;
+    &:last-child {
+        margin: 0 auto;
+    }
+}
+
+.summary {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.summary-info {
+    font-size: 1rem;
+    display: flex;
+    p {
+        margin-top: 1rem;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+.post-date {
+    font-size: 0.8rem;
+    text-align: right;
+}

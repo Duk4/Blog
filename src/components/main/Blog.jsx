@@ -1,7 +1,7 @@
 import React from 'react';
 import PostSummary from '../posts/PostSummery';
 
-function Blog() {
+const Blog = () => {
     return (
         <div className="blog">
             <PostSummary />

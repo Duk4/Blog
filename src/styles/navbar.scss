@@ -1,0 +1,26 @@
+.navbar {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 2rem;
+    padding: 1rem;
+    flex-grow: 1;
+    flex-basis: 1;
+    text-decoration: none;
+    color: #535C68;
+    &:hover {
+        color: #292e34;
+        transform: scale(1.2);
+    }
+}
+
+.admin {
+    width: 20%;
+}

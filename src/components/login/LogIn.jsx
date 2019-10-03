@@ -21,8 +21,8 @@ class LogIn extends Component {
                     </div>
                     <div className="input-field">
                         <button className="login-btn">Log In</button>
-                        <div className="login-error"></div>
                     </div>
+                    <div className="login-error"></div>
                 </form>
             </div>
         )

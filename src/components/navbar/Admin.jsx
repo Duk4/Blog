@@ -4,7 +4,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const plus = <FontAwesomeIcon icon={faPlus} />;
 
-function Admin() {
+const Admin = () => {
     return (
         <div className="container">
             <div className="navbar admin">

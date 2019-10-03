@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+const About = () => {
     return (
         <div className="about">
             <h3>O meni</h3>
