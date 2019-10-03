@@ -9,7 +9,7 @@ body {
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
     font-size: 10px;
-    background-color: #fff;
+    background-color: #DAE0E2;
     width: 100%;
 }
 
@@ -77,10 +77,10 @@ h3 {
 .footer {
     width: 100%;
     bottom: 0;
-    color: #000;
+    color: #535C68;
     text-align: center;
     height: 4rem;
-    background-color: #535C68;
+    background-color: #DAE0E2;
     font-size: 1.5rem;
 }
 
@@ -247,7 +247,6 @@ h3 {
     margin: 0 auto;
     padding: 2rem 0;
     background-color: #535C68;
-    box-shadow: 2rem 0 2rem 0 rgba(83,92,104,0.75), -2rem 0 2rem 0 rgba(83,92,104,0.75);
 }
 
 .post-summary {
@@ -256,6 +255,10 @@ h3 {
     padding: 1rem;
     color: #000;
     background-color: #DAE0E2;
+}
+
+.post-summary:last-child {
+    margin: 0 auto;
 }
 
 h4 {
