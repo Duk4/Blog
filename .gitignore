@@ -6,8 +6,9 @@
 # testing
 /coverage
 
-#folders
-/src/config
+#files
+/src/config/fbConfig.js
+/src/config/firebaseConfig.js
 
 # production
 /build
