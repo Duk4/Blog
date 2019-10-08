@@ -6,7 +6,7 @@ const About = () => {
             <h3>O meni</h3>
             <div className="about-text">
                 <p className="indent">
-                    <strong>Propali student, šegrt, bivši kurir, pesimista po tuđem viđenju... Sve u svemu, gadan starac u budućnosti.</strong>
+                    Propali student, šegrt, bivši kurir, pesimista po tuđem viđenju... Sve u svemu, gadan starac u budućnosti.
                 </p>
                 <p className="indent">
                     Sluha za tehnologiju u mojoj porodici nije bilo, čak štaviše, o njoj su se pričale teorije zavere.

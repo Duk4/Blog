@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Header from './components/header/Header';
-import Guest from './components/navbar/Guest';
-//import Admin from './components/navbar/Admin';
+import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Blog from './components/main/Blog';
 import About from './components/main/About';
@@ -17,7 +16,7 @@ const App = () => {
     <BrowserRouter>
       <div className="app">
         <Header />
-        <Guest />
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Blog} />
           <Route path="/about" component={About} />
