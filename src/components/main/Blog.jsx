@@ -1,13 +1,20 @@
 import React from 'react';
-import PostSummary from '../posts/PostSummery';
+import PostSummary from '../posts/PostSummary';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 
 class Blog extends React.Component {
     render() {
-        const { posts } = this.props;
+        const { posts, isLoading } = this.props;
         console.log(this.props);
+        console.log(posts);
+
+        if (isLoading) {
+            return (
+                <div className="blog">Loading...</div>
+            );
+        }
 
         return (
             <div className="blog">
@@ -16,18 +23,16 @@ class Blog extends React.Component {
                         return <PostSummary key={post.id} post={post} />
                     })
                 }
-                <PostSummary />
-                <PostSummary />
-                <PostSummary />
             </div>
         );
+
     };
 };
 
 const mapStateToProps = (state) => {
-    console.log(state)
     return {
-        posts: state.firestore.ordered.posts
+        posts: state.firestore.ordered ? state.firestore.ordered.posts : [],
+        isLoading: !state.firestore.ordered
     }
 };
 
