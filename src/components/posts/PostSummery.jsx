@@ -1,16 +1,19 @@
 import React from 'react';
 
-const PostSummary = () => {
+const PostSummary = ({ post }) => {
+
+    console.log(post);
+
     return (
         <div className="post-summary">
-            <h4>Title</h4>
+            {/* <h4>{post.title}</h4>
             <p className="summary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et erat feugiat, elementum ex eget, iaculis ex. Quisque tincidunt, purus eu mattis imperdiet, ex enim aliquet magna, vel accumsan erat ligula viverra odio.
+                {post.content}
             </p>
             <div className="summary-info">
-                <p>Dušan Tanasić</p>
-                <p className="post-date">11.09.2019.</p>
-            </div>
+                <p>{post.author}</p>
+                <p className="post-date">{post.date}</p>
+            </div> */}
         </div>
     );
 }
