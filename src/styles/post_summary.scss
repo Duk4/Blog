@@ -1,9 +1,10 @@
 .post-summary {
-    width: 80%;
+    width: 90%;
     margin: 0 auto 1rem auto;
     padding: 1rem;
     color: #000;
     background-color: #DAE0E2;
+    border-radius: 1rem;
     &:last-child {
         margin: 0 auto;
     }
@@ -12,6 +13,7 @@
 .summary {
     font-size: 1.2rem;
     text-align: justify;
+    word-wrap: break-word;
 }
 
 .summary-info {

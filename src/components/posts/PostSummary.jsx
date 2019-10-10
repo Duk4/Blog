@@ -2,7 +2,6 @@ import React from 'react';
 import moment from 'moment';
 
 const PostSummary = ({ post }) => {
-    console.log(post.date);
     const summary = (post.content).slice(0, 150) + '...';
 
     return (
@@ -13,7 +12,7 @@ const PostSummary = ({ post }) => {
             </p>
             <div className="summary-info">
                 <p>{post.author}</p>
-                <p className="post-date">{moment(post.date.toDate()).format('l')}</p>
+                <p className="post-date">{moment(post.date.toDate()).format('LL')}</p>
             </div>
         </div>
     );
