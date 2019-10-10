@@ -7,7 +7,6 @@
 /coverage
 
 #files
-/src/config/fbConfig.js
 /src/config/firebaseConfig.js
 
 # production

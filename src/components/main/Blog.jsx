@@ -12,7 +12,7 @@ class Blog extends React.Component {
 
         if (isLoading) {
             return (
-                <div className="blog">Loading...</div>
+                <div className="blog-loading">Loading...</div>
             );
         }
 

@@ -1,4 +1,4 @@
-.blog {
+.blog-loading {
     width: 50%;
     min-height: 20vh;
     margin: 0 auto;
@@ -6,4 +6,12 @@
     background-color: #535C68;
     text-align: center;
     font-size: 2rem;
+}
+
+.blog {
+    width: 50%;
+    min-height: 20vh;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: #535C68;
 }

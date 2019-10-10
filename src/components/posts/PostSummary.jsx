@@ -3,12 +3,13 @@ import moment from 'moment';
 
 const PostSummary = ({ post }) => {
     console.log(post.date);
+    const summary = (post.content).slice(0, 150) + '...';
 
     return (
         <div className="post-summary">
             <h4>{post.title}</h4>
             <p className="summary">
-                {post.content}
+                {summary}
             </p>
             <div className="summary-info">
                 <p>{post.author}</p>
