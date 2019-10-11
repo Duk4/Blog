@@ -1,9 +1,9 @@
 .about {
     text-align: center;
-    width: 50%;
+    width: 45%;
     margin: 3rem auto;
     font-size: 1.6rem;
-    background-color: #EFC27A;
+    background-color: #535C68;
     padding: 2rem;
     border-radius: 2rem;
     h3 {
@@ -13,6 +13,14 @@
     p {
         margin-bottom: 1rem;
     }
+}
+
+.about-text {
+    width: 95%;
+    margin: 0 auto;
+    color: #DAE0E2;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .indent {

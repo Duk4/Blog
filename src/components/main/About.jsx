@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
     return (
         <div className="about">
-            <h3>O meni</h3>
             <div className="about-text">
+                <h3>O meni</h3>
                 <p className="indent">
                     Propali student, šegrt, bivši kurir, pesimista po tuđem viđenju... Sve u svemu, gadan starac u budućnosti.
                 </p>

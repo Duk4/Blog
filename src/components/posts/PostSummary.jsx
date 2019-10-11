@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 
 const PostSummary = ({ post }) => {
-    const summary = (post.content).slice(0, 150) + '...';
+    const summary = (post.content).slice(0, 200) + '...';
 
     return (
         <div className="post-summary">

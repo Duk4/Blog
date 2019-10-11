@@ -9,9 +9,11 @@ const Admin = () => {
     return (
         <div className="container">
             <div className="navbar">
-                <a href={"#"}><Link to="/">Blog</Link></a>
-                <a href={"#"}><Link to="/create">{plus}</Link></a>
-                <a href={"#"}>Log Out</a>
+                <ul>
+                    <li><Link to="/">Blog</Link></li>
+                    <li><Link to="/create">{plus}</Link></li>
+                    <li><a href={"#"}>Log Out</a></li>
+                </ul>
             </div>
         </div>
     );

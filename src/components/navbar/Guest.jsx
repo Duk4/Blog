@@ -5,9 +5,11 @@ const Guest = () => {
     return (
         <div className="container">
             <div className="navbar">
-                <a href={"#"}><Link to="/">Blog</Link></a>
-                <a href={"#"}><Link to="/about">O meni</Link></a>
-                <a href={"https://github.com/Duk4"} target="_blank">GitHub</a>
+                <ul>
+                    <li><Link to="/about">O meni</Link></li>
+                    <li><Link to="/">Blog</Link></li>
+                    <li><a href={"https://github.com/Duk4"} target="_blank">GitHub</a></li>
+                </ul>
             </div>
         </div>
     );
