@@ -2,7 +2,6 @@
     width: 50%;
     min-height: 20vh;
     margin: 0 auto;
-    padding: 2rem 0;
     background-color: #535C68;
     border-radius: 2rem;
     text-align: center;
@@ -13,7 +12,15 @@
     width: 50%;
     min-height: 20vh;
     margin: 2rem auto;
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: #535C68;
     border-radius: 2rem;
+    a {
+        display: block;
+        text-decoration: none;
+        margin: 0 auto 1rem auto;
+        &:first-child {
+            margin: 1rem auto;
+        }
+    }
 }

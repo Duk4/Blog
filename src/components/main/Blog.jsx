@@ -3,12 +3,11 @@ import PostSummary from '../posts/PostSummary';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
+import { Link } from 'react-router-dom';
 
 class Blog extends React.Component {
     render() {
         const { posts, isLoading } = this.props;
-        console.log(this.props);
-        console.log(posts);
 
         if (isLoading) {
             return (
@@ -20,7 +19,11 @@ class Blog extends React.Component {
             <div className="blog">
                 {
                     posts && posts.map(post => {
-                        return <PostSummary key={post.id} post={post} />
+                        return (
+                            <Link to={'/article/' + post.id} key={post.id}>
+                                <PostSummary post={post} />
+                            </Link>
+                        );
                     })
                 }
             </div>

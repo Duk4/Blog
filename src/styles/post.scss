@@ -6,6 +6,7 @@
 .content {
     font-size: 1.4rem;
     text-align: justify;
+    word-wrap: break-word;
 }
 
 .post-info {
@@ -13,4 +14,10 @@
     margin-top: 2rem;
     color: #535C68;
     text-align: right;
+}
+
+.post-loading {
+    text-align: center;
+    font-size: 3rem;
+    min-height: 30vh;
 }

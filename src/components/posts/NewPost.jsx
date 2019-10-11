@@ -8,16 +8,16 @@ class NewPost extends React.Component {
         content: ''
     }
 
-    handleChange = (e) => {
-        this.setState({
-            [e.target.id]: e.target.value
-        });
-    }
-
     goBack = (e) => {
         e.preventDefault();
 
         this.props.history.goBack();
+    }
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.id]: e.target.value
+        });
     }
 
     handleSubmit = (e) => {

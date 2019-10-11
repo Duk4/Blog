@@ -5,27 +5,26 @@
     height: 5rem;
     justify-content: center;
     align-items: center;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0 auto;
-}
-
-li {
-    flex-grow: 1;
-    flex-basis: 0;
-    font-size: 3rem;
-    padding: 1rem;
-}
-
-a {
-    text-decoration: none;
-    display: block;
-    color: #535C68;
-    &:hover {
-    color: #292e34;
-    transform: scale(1.2);
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    li {
+        flex-grow: 1;
+        flex-basis: 0;
+        font-size: 3rem;
+        padding: 1rem;
+    }
+    
+    a {
+        text-decoration: none;
+        display: block;
+        color: #535C68;
+        &:hover {
+        color: #292e34;
+        transform: scale(1.2);
+        }
     }
 }
