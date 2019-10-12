@@ -39,11 +39,11 @@ class NewPost extends React.Component {
                     <h3>Novi tekst</h3>
                     <div className="new-input-field">
                         <label htmlFor="title">Naslov:</label>
-                        <input type="text" id="title" onChange={this.handleChange} />
+                        <input type="text" id="title" required onChange={this.handleChange} />
                     </div>
                     <div className="new-input-field">
                         <label htmlFor="textarea">Tekst:</label>
-                        <textarea id="content" onChange={this.handleChange} />
+                        <textarea id="content" required onChange={this.handleChange} />
                     </div>
                     <div className="new-input-field btns">
                         <button className="cancel-btn" onClick={this.goBack}>Odbaci</button>
