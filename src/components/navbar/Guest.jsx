@@ -8,7 +8,7 @@ const Guest = () => {
                 <ul>
                     <li><Link to="/about">O meni</Link></li>
                     <li><Link to="/">Blog</Link></li>
-                    <li><a href={"https://github.com/Duk4"} target="_blank">GitHub</a></li>
+                    <li><a href={"https://github.com/Duk4"} target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 </ul>
             </div>
         </div>

@@ -14,7 +14,7 @@ const Admin = (props) => {
                 <ul>
                     <li><Link to="/">Blog</Link></li>
                     <li><Link to="/create">{plus}</Link></li>
-                    <li><a onClick={props.logOut}>Log Out</a></li>
+                    <li><a href="/" onClick={props.logOut}>Log Out</a></li>
                 </ul>
             </div>
         </div>

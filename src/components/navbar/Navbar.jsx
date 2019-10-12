@@ -5,7 +5,7 @@ import Admin from './Admin';
 
 const Navbar = (props) => {
     const { auth } = props;
-    console.log(props);
+
     const links = auth.uid ? <Admin /> : <Guest />;
 
     return (
