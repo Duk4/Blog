@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="about">
             <div className="about-text">
-                <h3>O meni</h3>
+                <h3>O sebi</h3>
                 <p className="indent">
                     Propali student, šegrt, bivši kurir, pesimista po tuđem viđenju... Sve u svemu, gadan starac u budućnosti.
                 </p>
