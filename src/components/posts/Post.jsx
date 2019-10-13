@@ -3,13 +3,38 @@ import moment from 'moment';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
+import { deletePost } from '../../store/actions/postActions';
 
-const Post = ({ post, isLoading }) => {
+const Post = (props) => {
+    const { deletePost, auth, post, isLoading } = props;
+
     if (isLoading) {
         return (
-            <div className="post-loading">Loading post...</div>
+            <div className="loading">Loading...</div>
         );
     }
+
+    const handleDelete = (e) => {
+        e.preventDefault();
+        let id = window.location.pathname.slice(9);
+
+        deletePost(id);
+        props.history.push('/');
+    }
+
+    const handleEdit = (e) => {
+        e.preventDefault();
+        let id = window.location.pathname.slice(9);
+
+        window.location.pathname = '/edit/' + id;
+    }
+
+    const btns = (
+        <div className="post-btns">
+            <button className="edit-btn" onClick={handleEdit}>EDIT</button>
+            <button className="delete-btn" onClick={handleDelete}>DELETE</button>
+        </div>
+    );
 
     return (
         <div className="post-wrap">
@@ -23,6 +48,9 @@ const Post = ({ post, isLoading }) => {
                     <p className="post-date">{moment(post.date.toDate()).format('L')}</p>
                 </div>
             </div>
+            {
+                (auth.uid) ? btns : null
+            }
         </div>
     );
 }
@@ -34,12 +62,19 @@ const mapStateToProps = (state, ownProps) => {
 
     return {
         post,
-        isLoading: !state.firestore.data.posts
+        isLoading: !state.firestore.data.posts,
+        auth: state.firebase.auth
     }
 };
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+        deletePost: (post) => dispatch(deletePost(post))
+    }
+}
+
 export default compose(
-    connect(mapStateToProps),
+    connect(mapStateToProps, mapDispatchToProps),
     firestoreConnect([
         { collection: 'posts' }
     ])

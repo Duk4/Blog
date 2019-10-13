@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/login" component={LogIn} />
           <Route path="/article/:id" component={Post} />
           <Route path="/create" component={NewPost} />
-          <Route path="/edit" component={EditPost} />
+          <Route path="/edit/:id" component={EditPost} />
         </Switch>
         <Footer />
       </div>

@@ -27,8 +27,40 @@
     text-align: right;
 }
 
-.post-loading {
-    text-align: center;
-    font-size: 3rem;
-    min-height: 30vh;
+.post-btns {
+    display: flex;
+    width: 40%;
+    margin: 2rem auto 0 auto;
+    button{
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 1rem;
+        font-size: 1.4rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        &:first-child{
+            margin-right: 1rem;
+        }
+    }
+}
+
+.edit-btn{
+    color: #fff;
+    background-color: #0A79DF;
+    &:hover{
+        color: #0A79DF;
+        background-color: #fff;
+    }
+}
+
+.delete-btn{
+    color: #fff;
+    background-color: #E8290B;
+    &:hover{
+        color: #E8290B;
+        background-color: #fff;
+    }
 }

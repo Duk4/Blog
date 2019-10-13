@@ -11,7 +11,7 @@ class Blog extends React.Component {
 
         if (isLoading) {
             return (
-                <div className="blog-loading">Loading...</div>
+                <div className="loading">Loading...</div>
             );
         }
 
