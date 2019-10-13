@@ -6,8 +6,12 @@
 # testing
 /coverage
 
-#files
+#files&folders
 /src/config/firebaseConfig.js
+.firebaserc
+firebase.json
+/functions
+/lib
 
 # production
 /build
