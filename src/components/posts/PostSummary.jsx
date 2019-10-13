@@ -12,7 +12,7 @@ const PostSummary = ({ post }) => {
             </p>
             <div className="summary-info">
                 <p>{post.author}</p>
-                <p className="post-date">{moment(post.date.toDate()).format('LL')}</p>
+                <p className="post-date">{moment(post.date.toDate()).format('L')}</p>
             </div>
         </div>
     );

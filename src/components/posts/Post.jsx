@@ -12,14 +12,16 @@ const Post = ({ post, isLoading }) => {
     }
 
     return (
-        <div className="post">
-            <h3>{post.title}</h3>
-            <p className="content">
-                {post.content}
-            </p>
-            <div className="post-info">
-                <p>{post.author}</p>
-                <p className="post-date">{moment(post.date.toDate()).format('LL')}</p>
+        <div className="post-wrap">
+            <div className="post">
+                <h3>{post.title}</h3>
+                <p className="content">
+                    {post.content}
+                </p>
+                <div className="post-info">
+                    <p>{post.author}</p>
+                    <p className="post-date">{moment(post.date.toDate()).format('L')}</p>
+                </div>
             </div>
         </div>
     );
