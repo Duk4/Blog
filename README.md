@@ -1,30 +1,21 @@
 # Hopefully my future blog!
 
-## To see my project:
+![custom badge](https://img.shields.io/badge/BLOG-Du%C5%A1an%20Tanasi%C4%87-brightgreen)
 
-### Download or clone:
+> Coming soon...
 
-```bash 
-    git clone https://github.com/Duk4/Blog.git
-```
+#### You can see all the dependecies in package.json file
 
-### Then enter the folder by typing this in the console:
+## Tools used on this project:
 
-```bash 
-    cd name-of-the-folder
-```
-
-### To install all modules:
-
-```bash 
-    npm install
-```
-
-### To view it in the browser:
-
-```bash 
-    npm start
-```
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- UL -->
+* React.js
+* Redux.js
+  * Redux
+  * React-Redux
+  * Redux-Thunk
+* Sass
+* Firebase
+  * Database
+  * Authentication
+* Moment.js
