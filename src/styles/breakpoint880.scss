@@ -1,0 +1,53 @@
+@media  (max-width: 880px) {
+    .welcome {
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.5rem;
+        }
+    }
+
+    .navbar {
+        width: 80%;
+        margin: 0 auto;
+        li {
+            font-size: 2rem;
+        }
+    }
+
+    .about {
+        width: 80%;
+    }
+
+    .blog {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .post-wrap {
+        width: 80%;
+    }
+
+    .new-input-field {
+        width: 80%;
+    }
+
+    .edit-input-field {
+        width: 80%;
+    }
+
+    .btns {
+        width: 50%;
+    }
+
+    .input-field {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+}
