@@ -14,10 +14,8 @@
   * Redux
   * React-Redux
   * Redux-Thunk
-  * react-draft-wysiwig
 * Sass
 * Firebase
   * Database
   * Authentication
 * Moment.js
-* Draft.js
