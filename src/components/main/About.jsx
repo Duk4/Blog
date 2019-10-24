@@ -30,7 +30,7 @@ const About = () => {
                     <strong>Konačno su sve te linije koda imale smisla!</strong>
                 </p>
                 <p className="disclaimer">
-                    Ovaj blog sam iskoristio za učenje React i Redux biblioteka.
+                    Blog je napravljen uz pomoć React-a, Redux-a i Firebase-a.
                 </p>
             </div>
         </div>
