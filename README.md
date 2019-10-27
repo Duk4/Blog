@@ -6,7 +6,7 @@
 
 #### You can see all the dependecies in package.json file
 
-## Tools used on this project:
+## Project contains:
 
 <!-- UL -->
 * React.js
@@ -19,3 +19,4 @@
   * Database
   * Authentication
 * Moment.js
+* Pagination
