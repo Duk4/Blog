@@ -11,7 +11,7 @@ import draftToHtml from 'draftjs-to-html';
 class EditPost extends React.Component {
     state = {
         title: '',
-        editorState: EditorState.createWithContent(ContentState.createFromBlockArray(convertFromHTML(this.props.post.content))),
+        editorState: '',
         content: ''
     }
 
@@ -68,7 +68,10 @@ class EditPost extends React.Component {
                         <label htmlFor="title">Naslov:</label>
                         <input type="text" id="title" required onChange={this.handleChange} defaultValue={post.title} />
                     </div>
-                    <Wysiwyg editorState={this.state.editorState} onEditorStateChange={this.onEditorStateChange} />
+                    <Wysiwyg
+                        editorState={EditorState.createWithContent(ContentState.createFromBlockArray(convertFromHTML(this.props.post.content)))}
+                        onEditorStateChange={this.onEditorStateChange}
+                    />
                     <div className="edit-input-field btns">
                         <button className="cancel-btn" onClick={this.goBack}>Odbaci</button>
                         <button className="submit-btn" type="submit">Sačuvaj</button>
