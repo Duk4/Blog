@@ -2,10 +2,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { createPost } from '../../store/actions/postActions';
+import Wysiwyg from '../editor/Editor';
+import { EditorState, convertToRaw } from 'draft-js';
+import draftToHtml from 'draftjs-to-html';
 
 class NewPost extends React.Component {
     state = {
         title: '',
+        editorState: EditorState.createEmpty(),
         content: ''
     }
 
@@ -24,11 +28,23 @@ class NewPost extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault();
 
-        this.props.createPost(this.state);
+        let post = { title: this.state.title, content: this.state.content };
+        this.props.createPost(post);
         this.props.history.push('/');
     }
 
+    onEditorStateChange = (editorState) => {
+        let content = draftToHtml(convertToRaw(editorState.getCurrentContent()));
+
+        this.setState({
+            ...this.state,
+            editorState,
+            content
+        });
+    };
+
     render() {
+        console.log(this.content);
         const { auth } = this.props;
 
         if (!auth.uid) return <Redirect to="/" />;
@@ -41,10 +57,7 @@ class NewPost extends React.Component {
                         <label htmlFor="title">Naslov:</label>
                         <input type="text" id="title" required onChange={this.handleChange} />
                     </div>
-                    <div className="new-input-field">
-                        <label htmlFor="textarea">Tekst:</label>
-                        <textarea id="content" required onChange={this.handleChange} />
-                    </div>
+                    <Wysiwyg editorState={this.state.editorState} onEditorStateChange={this.onEditorStateChange} />
                     <div className="new-input-field btns">
                         <button className="cancel-btn" onClick={this.goBack}>Odbaci</button>
                         <button type="submit" className="submit-btn">Potvrdi</button>

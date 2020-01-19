@@ -4,10 +4,14 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { Redirect } from 'react-router-dom';
 import { editPost } from '../../store/actions/postActions';
+import Wysiwyg from '../editor/Editor';
+import { EditorState, ContentState, convertToRaw, convertFromHTML } from 'draft-js';
+import draftToHtml from 'draftjs-to-html';
 
 class EditPost extends React.Component {
     state = {
         title: '',
+        editorState: EditorState.createWithContent(ContentState.createFromBlockArray(convertFromHTML(this.props.post.content))),
         content: ''
     }
 
@@ -35,6 +39,16 @@ class EditPost extends React.Component {
         this.props.history.push('/');
     }
 
+    onEditorStateChange = (editorState) => {
+        let content = draftToHtml(convertToRaw(editorState.getCurrentContent()));
+
+        this.setState({
+            ...this.state,
+            editorState,
+            content
+        });
+    };
+
     render() {
         const { auth, post, isLoading } = this.props;
 
@@ -54,10 +68,7 @@ class EditPost extends React.Component {
                         <label htmlFor="title">Naslov:</label>
                         <input type="text" id="title" required onChange={this.handleChange} defaultValue={post.title} />
                     </div>
-                    <div className="edit-input-field">
-                        <label htmlFor="textarea">Tekst:</label>
-                        <textarea id="content" required onChange={this.handleChange} defaultValue={post.content} />
-                    </div>
+                    <Wysiwyg editorState={this.state.editorState} onEditorStateChange={this.onEditorStateChange} />
                     <div className="edit-input-field btns">
                         <button className="cancel-btn" onClick={this.goBack}>Odbaci</button>
                         <button className="submit-btn" type="submit">Sačuvaj</button>
