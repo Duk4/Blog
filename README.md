@@ -4,11 +4,7 @@
 
 > Coming soon...
 
-#### You can see all the dependecies in package.json file
-
 ## Project contains:
-
-<!-- UL -->
 * React.js
 * Redux.js
   * Redux
@@ -19,4 +15,6 @@
   * Database
   * Authentication
 * Moment.js
+* Draft.js
+* Wysiwyg
 * Pagination
