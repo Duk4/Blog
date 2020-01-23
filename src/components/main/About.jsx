@@ -29,9 +29,6 @@ const About = () => {
                 <p>
                     <strong>Konačno su sve te linije koda imale smisla!</strong>
                 </p>
-                <p className="disclaimer">
-                    Blog je napravljen uz pomoć React-a, Redux-a i Firebase-a.
-                </p>
             </div>
         </div>
     );
