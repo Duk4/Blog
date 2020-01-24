@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="header">
+        <div className="header" id="scroll-into">
             <div className="welcome">
-                <h1>Dobrodošli</h1>
-                <p>na moj skromni blog, gde ću sa vama podeliti svoja iskustva iz IT industrije.</p>
+                <h1>Welcome</h1>
+                <p>to my blog, where I will share my experiences from IT industry</p>
             </div>
         </div>
     );

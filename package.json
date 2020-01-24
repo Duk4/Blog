@@ -17,6 +17,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-draft-wysiwyg": "^1.14.4",
+    "react-helmet": "^5.2.1",
     "react-redux": "^5.1.2",
     "react-redux-firebase": "^2.4.1",
     "react-router-dom": "^5.1.2",

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import moment from 'moment';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { deletePost } from '../../store/actions/postActions';
+import { Helmet } from 'react-helmet'
 
 const Post = (props) => {
     const { deletePost, auth, post, isLoading } = props;
@@ -42,8 +43,16 @@ const Post = (props) => {
         return { __html: html };
     }
 
+    useEffect(() => {
+        const el = document.getElementById('scroll-into-view');
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
     return (
-        <div className="post-wrap">
+        <div className="post-wrap" id="scroll-into-view">
+            <Helmet>
+                <title>{post.title}</title>
+            </Helmet>
             <div className="post">
                 <h3>{post.title}</h3>
                 <p className="content" dangerouslySetInnerHTML={createMarkup()}></p>

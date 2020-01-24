@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Helmet from "react-helmet";
 
 const About = () => {
+    useEffect(() => {
+        const el = document.getElementById('scroll-into-view');
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
     return (
-        <div className="about">
+        <div className="about" id="scroll-into-view">
+            <Helmet>
+                <title>About - Dušan Tanasić</title>
+            </Helmet>
             <div className="about-text">
-                <h3>O sebi</h3>
                 <p className="indent">
                     Propali student, šegrt, bivši kurir, pesimista... Sve u svemu, gadan starac u budućnosti.
                 </p>

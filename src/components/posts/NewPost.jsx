@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { createPost } from '../../store/actions/postActions';
@@ -43,6 +44,11 @@ class NewPost extends React.Component {
         });
     };
 
+    componentDidMount() {
+        const el = document.getElementById('scroll-into-new');
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
     render() {
         console.log(this.content);
         const { auth } = this.props;
@@ -50,17 +56,20 @@ class NewPost extends React.Component {
         if (!auth.uid) return <Redirect to="/" />;
 
         return (
-            <div className="new-post">
+            <div className="new-post" id="scroll-into-new">
+                <Helmet>
+                    <title>New post</title>
+                </Helmet>
                 <form className="new-post-form" onSubmit={this.handleSubmit}>
-                    <h3>Novi tekst</h3>
+                    <h3>New post</h3>
                     <div className="new-input-field">
-                        <label htmlFor="title">Naslov:</label>
+                        <label htmlFor="title">Title:</label>
                         <input type="text" id="title" required onChange={this.handleChange} />
                     </div>
                     <Wysiwyg editorState={this.state.editorState} onEditorStateChange={this.onEditorStateChange} />
                     <div className="new-input-field btns">
-                        <button className="cancel-btn" onClick={this.goBack}>Odbaci</button>
-                        <button type="submit" className="submit-btn">Potvrdi</button>
+                        <button className="cancel-btn" onClick={this.goBack}>Cancel</button>
+                        <button type="submit" className="submit-btn">Publish</button>
                     </div>
                 </form>
             </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { logIn } from '../../store/actions/authActions';
@@ -21,13 +22,21 @@ class LogIn extends Component {
         this.props.logIn(this.state);
     }
 
+    componentDidMount() {
+        const el = document.getElementById('scroll-into-login');
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
     render() {
         const { auth, authError } = this.props;
 
         if (auth.uid) return <Redirect to="/" />;
 
         return (
-            <div className="login">
+            <div className="login" id="scroll-into-login">
+                <Helmet>
+                    <title>Log In</title>
+                </Helmet>
                 <form className="form" onSubmit={this.handleSubmit}>
                     <h3>Log In</h3>
                     <div className="input-field">

@@ -7,6 +7,7 @@ import { editPost } from '../../store/actions/postActions';
 import Wysiwyg from '../editor/Editor';
 import { EditorState, ContentState, convertToRaw, convertFromHTML } from 'draft-js';
 import draftToHtml from 'draftjs-to-html';
+import { Helmet } from 'react-helmet';
 
 class EditPost extends React.Component {
     state = {
@@ -49,6 +50,17 @@ class EditPost extends React.Component {
         });
     };
 
+    onLoad = () => {
+        this.setState({
+            ...this.state,
+            title: this.props.post.title,
+            content: this.props.post.content
+        });
+
+        const el = document.getElementById('scroll-into-edit');
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
     render() {
         const { auth, post, isLoading } = this.props;
 
@@ -61,11 +73,14 @@ class EditPost extends React.Component {
         }
 
         return (
-            <div className="edit-post">
-                <form className="edit-post-form" onSubmit={this.handleSubmit}>
-                    <h3>Izmeni tekst</h3>
+            <div className="edit-post" id="scroll-into-edit">
+                <Helmet>
+                    <title>Edit post</title>
+                </Helmet>
+                <form className="edit-post-form" onLoad={this.onLoad} onSubmit={this.handleSubmit}>
+                    <h3>Edit post</h3>
                     <div className="edit-input-field">
-                        <label htmlFor="title">Naslov:</label>
+                        <label htmlFor="title">Title:</label>
                         <input type="text" id="title" required onChange={this.handleChange} defaultValue={post.title} />
                     </div>
                     <Wysiwyg
@@ -73,8 +88,8 @@ class EditPost extends React.Component {
                         onEditorStateChange={this.onEditorStateChange}
                     />
                     <div className="edit-input-field btns">
-                        <button className="cancel-btn" onClick={this.goBack}>Odbaci</button>
-                        <button className="submit-btn" type="submit">Sačuvaj</button>
+                        <button className="cancel-btn" onClick={this.goBack}>Cancel</button>
+                        <button className="submit-btn" type="submit">Save</button>
                     </div>
                 </form>
             </div>

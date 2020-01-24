@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 class Blog extends React.Component {
     constructor(props) {
@@ -14,16 +15,20 @@ class Blog extends React.Component {
         }
 
         const getPage = localStorage.getItem('page');
-        console.log(getPage);
+
         if (getPage) {
             this.state.currentPage = JSON.parse(getPage);
         };
     }
 
+    componentDidMount() {
+        const el = document.getElementById('scroll-into');
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
     render() {
         const { posts, isLoading, postsPerPage } = this.props;
         const { currentPage } = this.state;
-        console.log(this.state)
 
         if (isLoading) {
             return (
@@ -35,20 +40,24 @@ class Blog extends React.Component {
         const indexOfFirstPost = indexOfLastPost - postsPerPage;
         let currentPosts;
         let totalPosts;
+        let paginationRender;
         if (posts) {
             currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
             totalPosts = posts.length;
-        };
-
-        const paginate = (e, pageNumber) => {
-            e.preventDefault();
-            this.setState({ currentPage: pageNumber });
-            let pageState = JSON.stringify(pageNumber);
-            localStorage.setItem('page', pageState);
+            const paginate = (e, pageNumber) => {
+                e.preventDefault();
+                this.setState({ currentPage: pageNumber });
+                let pageState = JSON.stringify(pageNumber);
+                localStorage.setItem('page', pageState);
+            };
+            paginationRender = (posts.length > 5) ? <Pagination totalPosts={totalPosts} postsPerPage={postsPerPage} paginate={paginate} /> : null;
         };
 
         return (
             <div className="blog">
+                <Helmet>
+                    <title>Blog - Dušan Tanasić</title>
+                </Helmet>
                 {
                     posts && currentPosts.map(post => {
                         return (
@@ -58,7 +67,7 @@ class Blog extends React.Component {
                         );
                     })
                 }
-                <Pagination totalPosts={totalPosts} postsPerPage={postsPerPage} paginate={paginate} />
+                {paginationRender}
             </div>
         );
     };
@@ -68,7 +77,7 @@ const mapStateToProps = (state) => {
     return {
         posts: state.firestore.ordered ? state.firestore.ordered.posts : [],
         isLoading: !state.firestore.ordered,
-        postsPerPage: 3
+        postsPerPage: 5
     }
 };
 
