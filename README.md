@@ -18,3 +18,4 @@
 * Draft.js
 * Wysiwyg
 * Pagination
+* Helmet
