@@ -14,31 +14,32 @@ const About = () => {
             </Helmet>
             <div className="about-text">
                 <p className="indent">
-                    Propali student, šegrt, bivši kurir, pesimista... Sve u svemu, gadan starac u budućnosti.
+                    Hi, my name is Dušan Tanasić and I'm a Software Developer from Belgrade, Serbia.
+                    By the end of the 2018, I was miserable at my package delivery job. Thankfully my contract has ran out on 30th December.
+                    First thing I did in 2019. was buying a new PC and getting an Android/Java course. After two months not much was clear,
+                    so I switched to Web, which was much more transparent. JavaScript seemed easier due to data type fluidity and zero boilerplate.
+                    Since then, I aquired good understanding of frontend development and slowly turning towards server side and NodeJS.
+                    My framework of choice is React.js; it was advised by my mentor and I like working with it.
                 </p>
                 <p className="indent">
-                    Sluha za tehnologiju u mojoj porodici nije bilo, čak štaviše, o njoj su se pričale teorije zavere.
-                    Prvi kompjuter je sasvim sigurno kupljen jer su ga svi u ulici već imali... Igrice su bile zle i 'loše su uticale na mene'!
-                    Naravno da o kompjuterima ni sad, kao ni tad, ne znam ništa. Par puta sam prisustvovao sklapanju istog, i uvek mi je izgledalo kao magija.
-                    Sve te komponente i svi ti kablovi...
+                    I'm unemployed and looking for a frontend developer position. Currently, my mentor is writting project documentation for an app he came up with for me to build.
+                    So even though I still don't have work experience, the next web app that I make is going to be a SaaS(Software as a Service) application.
+                    The plan is to host/publish it one day, although it's code probably won't be open source like my other projects.
+                </p>
+                <p className="indent" style={{ textAlign: 'center' }}>
+                    Why should you read my blog?
+                    You shouldn't...
                 </p>
                 <p className="indent">
-                    Elem, nekoliko puta sam kao tinejdžer pokušao da naučim sam da programiram. Naravno, neuspešno.
-                    Nepoznavanje tehničkih izraza na engleskom, a pogotovo nepoznavanje nijednog programera, uticalo je da moji pokušaji budu neuspešni.
-                    Zbog tih neuspeha sam nekoliko puta 2018. odbio ponudu poznanika da mi pomogne pri učenju.
-                    Na kraju je ipak uspeo da me urazumi...
-                </p>
-                <p className="indent">
-                    Početkom 2019. sam počeo sa učenjem Jave i programiranjem za Android uređaje. Nadam se da niko neće krenuti istim putem.
-                    Java je solidan jezik, ali je Android Studio i sve vezano za njega s****.
-                    Kasnije sam uvideo da prvo moraš imati odlično znanje osnova programiranja da bi počeo učiti tako nešto.
-                    Prvog marta sam se prebacio na web i dobro poznati HTML, CSS. Ubrzo sam počeo učiti i JavaScript, nakon čega sam potpuno "progledao".
+                    This is a way for me to say: "F*** you!", to anyone wasting my time on the course of finding the first job in the industry.
+                    It's also a chance to inspire others to not quit their own journeys and maybe guide some of you during the learning process.
+                    Blog is for everyone that's already in the IT industry or is thinking about coming into it.
                 </p>
                 <p>
-                    <strong>Konačno su sve te linije koda imale smisla!</strong>
+                    If you have any questions, you can contact me via email: dusan.tanasic@yahoo.com
                 </p>
             </div>
-        </div>
+        </div >
     );
 }
 
