@@ -10,7 +10,7 @@ const About = () => {
     return (
         <div className="about" id="scroll-into-view">
             <Helmet>
-                <title>About - Dušan Tanasić</title>
+                <title>Autor - Dušan Tanasić</title>
             </Helmet>
             <div className="about-text">
                 <p className="indent">
