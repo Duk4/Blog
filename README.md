@@ -1,8 +1,6 @@
-# Hopefully my future blog!
+# My blog!
 
 ![custom badge](https://img.shields.io/badge/BLOG-Du%C5%A1an%20Tanasi%C4%87-brightgreen)
-
-> Coming soon...
 
 ## Project contains:
 * React.js
