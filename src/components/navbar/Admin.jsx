@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { connect } from 'react-redux';
@@ -12,8 +12,8 @@ const Admin = (props) => {
         <div className="container">
             <div className="navbar">
                 <ul>
-                    <li><Link to="/">Blog</Link></li>
-                    <li><Link to="/create">{plus}</Link></li>
+                    <li><NavLink exact to="/" activeClassName="nav-active" activeStyle={{ color: '#292e34' }}>Blog</NavLink></li>
+                    <li><NavLink to="/create" activeClassName="nav-active" activeStyle={{ color: '#292e34' }}>{plus}</NavLink></li>
                     <li><a href="/" onClick={props.logOut}>Izloguj se</a></li>
                 </ul>
             </div>

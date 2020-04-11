@@ -24,8 +24,19 @@
         color: #535C68;
         cursor: pointer;
         &:hover {
-        color: #292e34;
-        transform: scale(1.2);
+            color: #292e34;
+            transform: scale(1.2);
+        }
+        &:active {
+            color: #292e34;
+        }
+        &:active:hover {
+            color: #292e34;
         }
     }
+}
+
+.nav-active {
+    color: #292e34;
+    transform: scale(1.2);
 }
