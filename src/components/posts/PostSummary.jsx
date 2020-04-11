@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 
 const PostSummary = ({ post }) => {
-    const summary = (post.content).slice(0, 150) + '...';
+    const summary = (post.content).slice(0, 250) + '...';
 
     function createMarkup() {
         return { __html: summary.toString() };

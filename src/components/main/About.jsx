@@ -14,29 +14,27 @@ const About = () => {
             </Helmet>
             <div className="about-text">
                 <p className="indent">
-                    Hi, my name is Dušan Tanasić and I'm a Software Developer from Belgrade, Serbia.
-                    By the end of the 2018, I was miserable at my package delivery job. Thankfully my contract has ran out on 30th December.
-                    First thing I did in 2019. was buying a new PC and getting an Android/Java course. After two months not much was clear,
-                    so I switched to Web, which was much more transparent. JavaScript seemed easier due to data type fluidity and zero boilerplate.
-                    Since then, I aquired good understanding of frontend development and slowly turning towards server side and NodeJS.
-                    My framework of choice is React.js; it was advised by my mentor and I like working with it.
+                    Ćao, moje ime je Dušan, bavim se programiranjem, iz Beograda sam.
+                    Krajem 2018. godine bio sam veoma razočaran svojom tadašnjom firmom i premoren od raznošenja pošiljki.
+                    Na svu sreću, ugovor je istekao 30. decembra.
+                    Prvo što sam uradio u 2019. bila je kupovina dobrog desktopa, a od budućeg mentora sam dobio Android/Java kurs sa Udemy-a.
+                    Nakon dva meseca i 6-7 mini aplikacija, shvatio sam da ništa nisam naučio(samo sam prepisivao).
+                    Zato sam prešao na web, tu su stvari mnogo "jednostavnije". JavaScript je delovao lakše zahvaljujući promenljivosti tipa varijable i lakoće pisanja koda.
+                    Od tada sam stekao solidno znanje iz oblasti frontend-a i polako se okrećem serveru i NodeJS-u. Framework koji koristim je React.
                 </p>
                 <p className="indent">
-                    I'm unemployed and looking for a frontend developer position. Currently, my mentor is writting project documentation for an app he came up with for me to build.
-                    So even though I still don't have work experience, the next web app that I make is going to be a SaaS(Software as a Service) application.
-                    The plan is to host/publish it one day, although it's code probably won't be open source like my other projects.
+                    U potrazi sam za frontend pozicijom. Trenutno radim na većem i ozbiljnijem projektu, kako bi pokazao i proširio svoje znanje.
+                    Ova aplikacija će biti SaaS(Software as a Service) tipa i namenjena je za IT timove. Plan je da se hostuje, dok bude u razvoju kod ćete moći da vidite na Github-u.
                 </p>
                 <p className="indent" style={{ textAlign: 'center' }}>
-                    Why should you read my blog?
-                    You shouldn't...
+                    A sad najbitnije! Zašto biste čitali mene? Nema razloga...
                 </p>
                 <p className="indent">
-                    This is a way for me to say: "F*** you!", to anyone wasting my time on the course of finding the first job in the industry.
-                    It's also a chance to inspire others to not quit their own journeys and maybe guide some of you during the learning process.
-                    Blog is for everyone that's already in the IT industry or is thinking about coming into it.
+                    Ovo je moj ventil, pišem da bi podelio ovo malo znanja i iskustva onima koje zanima programiranje.
+                    Da bi motivisao one koji su se umorili od učenja, programiranja, razvlačenja po intervjuima, da nastave dalje.
                 </p>
                 <p>
-                    If you have any questions, you can contact me via email: dusan.tanasic@yahoo.com
+                    Možete me kontaktirati putem mejla na: <a href="mailto:dusan.tanasic@yahoo.com" style={{ color: '#F0DF87' }}>dusan.tanasic@yahoo.com</a>
                 </p>
             </div>
         </div >
