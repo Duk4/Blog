@@ -34,7 +34,7 @@ const About = () => {
                     Da bi motivisao one koji su se umorili od učenja, programiranja, razvlačenja po intervjuima, da nastave dalje.
                 </p>
                 <p>
-                    Možete me kontaktirati putem mejla na: <a href="mailto:dusan.tanasic@yahoo.com" style={{ color: '#F0DF87' }}>dusan.tanasic@yahoo.com</a>
+                    Možete me kontaktirati putem mejla na: <a href="mailto:dusan.tanasic@yahoo.com">dusan.tanasic@yahoo.com</a>
                 </p>
             </div>
         </div >

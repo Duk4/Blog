@@ -4,8 +4,8 @@ const Header = () => {
     return (
         <div className="header" id="scroll-into">
             <div className="welcome">
-                <h1>Dobro došli</h1>
-                <p>na moj blog, gde delim svoja iskustva iz IT-a</p>
+                <h1>Dušan Tanasić</h1>
+                <p>software development blog</p>
             </div>
         </div>
     );
