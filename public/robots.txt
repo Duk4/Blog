@@ -1,2 +1,3 @@
+Sitemap: https://dusantanasic-blog.web.app/sitemap.xml
 User-agent: *
 Disallow:

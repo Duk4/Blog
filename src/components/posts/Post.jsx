@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import moment from 'moment';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
@@ -56,10 +55,6 @@ const Post = (props) => {
             <div className="post">
                 <h3>{post.title}</h3>
                 <p className="content" dangerouslySetInnerHTML={createMarkup()}></p>
-                <div className="post-info">
-                    <p>{post.author}</p>
-                    <p className="post-date">{moment(post.date.toDate()).format('L')}</p>
-                </div>
             </div>
             {
                 (auth.uid) ? btns : null

@@ -1,10 +1,12 @@
 .navbar {
-    margin: 1rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     width: 50%;
     text-align: center;
-    height: 5rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f0eeee;
+
     ul {
         list-style-type: none;
         display: flex;
@@ -21,17 +23,17 @@
     a {
         text-decoration: none;
         display: block;
-        color: #535C68;
+        color: #292e34;
         cursor: pointer;
         &:hover {
-            color: #292e34;
+            color: #000;
             transform: scale(1.2);
         }
         &:active {
-            color: #292e34;
+            color: #000;
         }
         &:active:hover {
-            color: #292e34;
+            color: #000;
         }
     }
 }

@@ -1,0 +1,22 @@
+@media  (max-width: 370px) {
+    .navbar{
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    .blog {
+        margin: 0 auto;
+    }
+
+    .post {
+        h3 {
+            font-size: 1rem;
+        }
+        .content {
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+}

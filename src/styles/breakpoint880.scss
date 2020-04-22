@@ -1,5 +1,11 @@
 @media  (max-width: 880px) {
+    .header {
+        height: 40vh;
+    }
+
     .welcome {
+        padding: 15vh 0;
+
         h1 {
             font-size: 3rem;
         }
@@ -12,7 +18,7 @@
 
     .navbar {
         width: 80%;
-        margin: 0 auto;
+        margin: 2rem auto 0 auto;
         li {
             font-size: 2rem;
         }
@@ -23,12 +29,32 @@
     }
 
     .blog {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
 
+    .post-summary {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        color: #000;
+        background-color: rgb(185, 221, 233);
+        border-radius: 1rem;
+    }
+
     .post-wrap {
-        width: 80%;
+        width: 90%;
+    }
+
+    .post {
+        h3 {
+            font-size: 1.5rem;
+        }
+        .content {
+            p {
+                font-size: 1.2rem;
+            }
+        }
     }
 
     .new-input-field {

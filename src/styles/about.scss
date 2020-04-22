@@ -1,29 +1,22 @@
 .about {
     text-align: center;
     width: 50%;
-    margin: 3rem auto;
+    margin: 3rem auto 3rem auto;
     font-size: 1.6rem;
-    background-color: rgb(185, 221, 233);
-    padding: 2rem;
-    border-radius: 2rem;
+    padding: 0 3rem;
     h3 {
         font-size: 3rem;
         padding-top: 0;
     }
     p {
         margin-bottom: 1rem;
+        text-align: justify;
     }
 }
 
 .about-text {
     width: 100%;
     margin: 0 auto;
-    color: #000000;
-    padding: 1rem;
+    color: #292e34;
     border-radius: 1rem;
-}
-
-.indent {
-    text-indent: 2em;
-    text-align: justify;
 }

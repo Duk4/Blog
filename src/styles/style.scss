@@ -11,10 +11,11 @@
 @import url('./post_summary.scss');
 @import url('./post.scss');
 @import url('./pagination.scss');
-@import url('./breakpoint1200.scss');
+@import url('./breakpoint1400.scss');
 @import url('./breakpoint880.scss');
-@import url('./breakpoint650.scss');
-@import url('./breakpoint450.scss');
+@import url('./breakpoint750.scss');
+@import url('./breakpoint550.scss');
+@import url('./breakpoint370.scss');
 
 * {
     margin: 0;
@@ -25,7 +26,6 @@
 
 body {
     font-size: 10px;
-    background-color: #DAE0E2;
     width: 100%;
 }
 
@@ -42,7 +42,6 @@ h4 {
 
 .container {
     width: 100%;
-    background-color: #DAE0E2;
 }
 
 .loading {
